@@ -12,8 +12,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start1": "set PORT=3001 && set REACT_APP_IFRAME_URL='http://localhost:3002' && react-scripts start",
-    "start2": "set PORT=3002 && react-scripts start",
+    "start": "react-scripts start",
+    "start1": "env-cmd -f \"./src/env/.env1.dev\" npm run start",
+    "start2": "env-cmd -f \"./src/env/.env2.dev\" npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
