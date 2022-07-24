@@ -1,7 +1,13 @@
-<!-- Starts an instance at port 3001 -->
-npm start1 
-<!-- Starts an instance at port 3002 -->
+## Install Dependencies
+npm i
+
+## Start a parent instance at port 3001
+npm start1
+
+## Start a child instance at port 3002 (Refresh parent after)
 npm start2
+
+Uncomment the REACT_DEVTOOLS_GLOBAL_HOOK block in src\index.jsx to and check the console of each app to see why the app won't work.
 
 ##### CRA BELOW #####
 # Getting Started with Create React App
