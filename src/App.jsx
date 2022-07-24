@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Iframe from './Iframe';
+import NumberInput from './NumberInput'
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       
         {/* Show iframe if the IFRAME_URL isn't undefined */}
         {process.env.REACT_APP_IFRAME_URL && <Iframe IFRAME_URL={process.env.REACT_APP_IFRAME_URL}/>}
+
+        <NumberInput defaultValue={5}/>
       </header>
     </div>
   );

@@ -4,7 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// todo if REACT_APP_USE_PARENT_HOOK, take the devtools hook from the parent
+// if (window.parent) {
+if (process.env.REACT_APP_LABEL == 'Child Iframe') {
+  console.log("Using parent hook")
+  console.log(window.parent)
+  window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
