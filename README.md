@@ -1,3 +1,9 @@
+<!-- Starts an instance at port 3001 -->
+npm start1 
+<!-- Starts an instance at port 3002 -->
+npm start2
+
+##### CRA BELOW #####
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
