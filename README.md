@@ -1,11 +1,14 @@
 ## Install Dependencies
 npm i
 
+# Different origin test
 ## Start a parent instance at port 3001
 npm run start1
-
 ## Start a child instance at port 3002 (Refresh parent after)
 npm run start2
+
+# Same origin test
+npm run start3
 
 Uncomment the REACT_DEVTOOLS_GLOBAL_HOOK block in src\index.jsx to and check the console of each app to see why the app won't work.
 

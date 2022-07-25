@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AppSameOrigin from './AppSameOrigin';
 
 // Uncomment this if you want the child app to use the parent app's hook
 // if (process.env.REACT_APP_LABEL === 'Child Iframe') {
@@ -14,7 +16,12 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="appsameorigin" element={<AppSameOrigin />} />
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
