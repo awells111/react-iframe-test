@@ -10,8 +10,6 @@ npm run start2
 # Same origin test
 npm run start3
 
-Uncomment the REACT_DEVTOOLS_GLOBAL_HOOK block in src\index.jsx to and check the console of each app to see why the app won't work.
-
 ##### CRA BELOW #####
 # Getting Started with Create React App
 

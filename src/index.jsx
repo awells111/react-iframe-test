@@ -6,13 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AppSameOrigin from './AppSameOrigin';
 
-// Uncomment this if you want the child app to use the parent app's hook
-// if (process.env.REACT_APP_LABEL === 'Child Iframe') {
-//   console.log("Using parent hook")
-//   console.log(window.parent)
-//   window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-// }
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
