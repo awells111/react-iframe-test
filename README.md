@@ -2,10 +2,10 @@
 npm i
 
 ## Start a parent instance at port 3001
-npm start1
+npm run start1
 
 ## Start a child instance at port 3002 (Refresh parent after)
-npm start2
+npm run start2
 
 Uncomment the REACT_DEVTOOLS_GLOBAL_HOOK block in src\index.jsx to and check the console of each app to see why the app won't work.
 
